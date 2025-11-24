@@ -6,7 +6,7 @@
 Mini-plateforme de quiz :
 
 * pages simples,
-* données mock ou JSON local,
+* données: base de données MySQL,
 * progression question par question,
 * score final,
 * gestion d'état globale via Zustand (léger et lisible),
@@ -24,7 +24,7 @@ Contenu :
 * Structure `app/`, pages, layouts.
 * Server vs Client Components (vision simple).
 * Création d'un projet Next.js.
-* Exercice : page d'accueil + layout global (header/footer).
+* Exercice en autonomie : page d'accueil + layout global (header/footer).
 
 ---
 
@@ -37,7 +37,7 @@ Contenu :
 * Routes classiques
 * `Link` et navigation
 * Premières routes dynamiques
-* Exercice : créer `/quiz` + liste de quiz en dur.
+* Exercice en autonomie  : créer `/quiz` + liste de quiz en dur.
 
 ---
 
@@ -49,7 +49,7 @@ Contenu :
 
 * `fetch()` intégré
 * JSON local ou URL simple
-* Exercice : la page `/quiz` affiche les quiz depuis un fichier JSON.
+* Exercice en autonomie  : la page `/quiz` affiche les quiz depuis un fichier JSON.
 
 ---
 
@@ -62,7 +62,7 @@ Contenu :
 * `useState` (logique locale)
 * gestion d'un index de question
 * évaluation basique
-* Exercice : prototype du quiz dans un composant client.
+* Exercice en autonomie  : prototype du quiz dans un composant client.
 
 ---
 
@@ -75,7 +75,7 @@ Contenu :
 * Pourquoi un état global ?
 * Installation et création d'un store minimaliste (score, question en cours).
 * Utilisation du store dans plusieurs composants/pages.
-* Exercice : gérer score + progression via Zustand.
+* Exercice en autonomie  : gérer score + progression via Zustand.
 
 ---
 
@@ -88,7 +88,7 @@ Contenu :
 * Sélecteurs
 * Actions propres
 * Persistance légère (localStorage)
-* Exercice : ajouter une page `/history` affichant les derniers scores.
+* Exercice en autonomie  : ajouter une page `/history` affichant les derniers scores.
 
 ---
 
@@ -100,7 +100,7 @@ Contenu :
 
 * bases Tailwind
 * mise en page de cartes et boutons
-* Exercice : styliser la page d'accueil et la page d'un quiz.
+* Exercice en autonomie  : styliser la page d'accueil et la page d'un quiz.
 
 ---
 
@@ -112,7 +112,7 @@ Contenu :
 
 * Situations concrètes où utiliser chaque mode
 * Revalidation simple
-* Exercice : transformer la liste des quiz en SSG simple.
+* Exercice en autonomie  : transformer la liste des quiz en SSG simple.
 
 ---
 
@@ -124,7 +124,7 @@ Contenu :
 
 * Route handler GET
 * Appeler l'API depuis le client
-* Exercice : une route `/api/hello` + affichage d'un message dans l'UI.
+* Exercice en autonomie  : une route `/api/hello` + affichage d'un message dans l'UI.
 
 ---
 
@@ -137,7 +137,7 @@ Contenu :
 * `next build`
 * Déploiement sur Vercel
 * Checklist de tests manuels
-* Exercice : publier la plateforme.
+* Exercice en autonomie  : publier la plateforme.
 
 ---
 
