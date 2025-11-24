@@ -1,159 +1,130 @@
+# Organisation finale (10 → 20)
 
-# Partie Next.js — Plan pédagogique
+## **Séance 10 — Cours + exercices (3h30)**
 
-##  Projet fil rouge
+**Thème : Introduction à Next.js**
+Contenu :
 
-Mini-plateforme de quiz :
-
-* pages simples,
-* données: base de données MySQL,
-* progression question par question,
-* score final,
-* gestion d'état globale via Zustand (léger et lisible),
-* stockage local optionnel.
+* App Router
+* Structure `app/`
+* Pages, layouts
+* Démarrage du projet
+  Exercices dirigés :
+* Créer layout global
+* Créer page d’accueil
 
 ---
 
-# Séance 10 — Introduction à Next.js
+## **Séance 11 — Autonomie fil rouge (3h30)**
 
-Objectifs : comprendre App Router et les bases.
+Application :
 
-Contenu :
-
-* Qu'est-ce que Next.js ?
-* Structure `app/`, pages, layouts.
-* Server vs Client Components (vision simple).
-* Création d'un projet Next.js.
-* Exercice en autonomie : page d'accueil + layout global (header/footer).
+* Finaliser l’architecture de base
+* Mettre en place le layout
+* Styliser légèrement l’accueil
+* Préparer la structure du quiz (dossiers, pages)
 
 ---
 
-# Séance 11 — Routing et navigation
+## **Séance 12 — Cours + exercices (3h30)**
 
-Objectifs : savoir créer une navigation basique.
-
+**Thème : Routing et navigation**
 Contenu :
 
-* Routes classiques
-* `Link` et navigation
+* Routes, `Link`, navigation
 * Premières routes dynamiques
-* Exercice en autonomie  : créer `/quiz` + liste de quiz en dur.
+  Exercices dirigés :
+* Création route `/quiz`
+* Liste de quiz en dur
 
 ---
 
-# Séance 12 — Chargement de données
+## **Séance 13 — Autonomie fil rouge (3h30)**
 
-Objectifs : comprendre le fetch dans un Server Component.
+Application :
 
+* Implémenter la liste réelle des quiz
+* Structurer les pages dynamiques `/quiz/[id]`
+* Préparer un fichier JSON de quiz de test
+
+---
+
+## **Séance 14 — Cours + exercices (3h30)**
+
+**Thème : Chargement de données + Server Components**
 Contenu :
 
 * `fetch()` intégré
-* JSON local ou URL simple
-* Exercice en autonomie  : la page `/quiz` affiche les quiz depuis un fichier JSON.
+* Chargement depuis JSON local
+  Exercices dirigés :
+* Afficher les quiz provenant du JSON
 
 ---
 
-# Séance 13 — Logique du quiz en local
+## **Séance 15 — Autonomie fil rouge (3h30)**
 
-Objectifs : révisions React (state et événements).
+Application :
 
+* Connecter réellement `/quiz/[id]` à ses données
+* Préparer affichage questions + réponses
+* Début de la logique du quiz
+
+---
+
+## **Séance 16 — Cours + exercices (3h30)**
+
+**Thème : Logique du quiz + Zustand**
 Contenu :
 
-* `useState` (logique locale)
-* gestion d'un index de question
-* évaluation basique
-* Exercice en autonomie  : prototype du quiz dans un composant client.
+* `useState` pour le prototype
+* Migration vers Zustand (score, index question)
+  Exercices dirigés :
+* Prototype complet d’un quiz local
 
 ---
 
-# Séance 14 — Introduction à Zustand (état global)
+## **Séance 17 — Autonomie fil rouge (3h30)**
 
-Objectifs : remplacer le state local par un store partagé.
+Application :
 
+* Intégrer Zustand dans tout le quiz
+* Mettre en place progression + score final
+* Ajouter stockage local optionnel (persistance)
+
+---
+
+## **Séance 18 — Cours + exercices (3h30)**
+
+**Thème : Styling avancé + mini-API Next.js**
 Contenu :
 
-* Pourquoi un état global ?
-* Installation et création d'un store minimaliste (score, question en cours).
-* Utilisation du store dans plusieurs composants/pages.
-* Exercice en autonomie  : gérer score + progression via Zustand.
+* Tailwind structuré
+* Route handler GET simple
+  Exercices dirigés :
+* Page d’un quiz stylée
+* Route `/api/hello` affichée dans l’UI
 
 ---
 
-# Séance 15 — Approfondissement Zustand
+## **Séance 19 — Autonomie fil rouge (3h30)**
 
-Objectifs : aller un peu plus loin, sans complexité.
+Application :
 
-Contenu :
-
-* Sélecteurs
-* Actions propres
-* Persistance légère (localStorage)
-* Exercice en autonomie  : ajouter une page `/history` affichant les derniers scores.
+* Styling complet de toutes les pages
+* Ajout page `/history` (scores)
+* Tests manuels
+* Préparation au déploiement
 
 ---
 
-# Séance 16 — Styling avec Tailwind
+## **Séance 20 — Soutenances (3h30)**
 
-Objectifs : mettre en forme proprement l'application.
+Présentation du projet :
 
-Contenu :
+* Structure du code
+* Architecture Next.js
+* Zustand
+* Styling Tailwind
+* API interne
+* Déploiement
 
-* bases Tailwind
-* mise en page de cartes et boutons
-* Exercice en autonomie  : styliser la page d'accueil et la page d'un quiz.
-
----
-
-# Séance 17 — Approfondissement Next.js (rendu hybride)
-
-Objectifs : comprendre mieux SSR/CSR/SSG de manière accessible.
-
-Contenu :
-
-* Situations concrètes où utiliser chaque mode
-* Revalidation simple
-* Exercice en autonomie  : transformer la liste des quiz en SSG simple.
-
----
-
-# Séance 18 — Mini-API interne (niveau débutant)
-
-Objectifs : découvrir les API routes sans complexité.
-
-Contenu :
-
-* Route handler GET
-* Appeler l'API depuis le client
-* Exercice en autonomie  : une route `/api/hello` + affichage d'un message dans l'UI.
-
----
-
-# Séance 19 — Déploiement et tests manuels
-
-Objectifs : finaliser le projet.
-
-Contenu :
-
-* `next build`
-* Déploiement sur Vercel
-* Checklist de tests manuels
-* Exercice en autonomie  : publier la plateforme.
-
----
-
-# Séance 20 — Soutenances
-
-Présentation : structure, pages, logique du quiz, store Zustand, déploiement.
-
----
-
-# Résultat final
-
-Une app Next.js  avec :
-
-* pages propres,
-* navigation maîtrisée,
-* état global simple via Zustand,
-* styling Tailwind,
-* mini-API,
-* déploiement en production.
