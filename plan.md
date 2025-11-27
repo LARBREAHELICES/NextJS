@@ -58,6 +58,8 @@ Contenu :
 * Chargement depuis JSON local
   Exercices dirigés :
 * Afficher les quiz provenant du JSON
+* Mettre en place la base de données: entitées, en MySQL.
+* Présentation d'un code minimal avec Tanstack Query pour récupérer les données persistante.
 
 ---
 
@@ -76,7 +78,6 @@ Application :
 **Thème : Logique du quiz + Zustand**
 Contenu :
 
-* `useState` pour le prototype
 * Migration vers Zustand (score, index question)
   Exercices dirigés :
 * Prototype complet d’un quiz local
